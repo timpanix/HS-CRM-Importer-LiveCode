@@ -15,4 +15,4 @@ http://www.phpclasses.org/package/6279-PHP-Parse-and-retrieve-data-from-Excel-XL
 
 A big thank you goes to Sergey Shuchkin for his SimpleXLSX API. Particularly his examples made the first part of this project a breeze.
 
-PLEASE NOTE: The files in this repo are configured to be run on a live production server. If you would like to use them on localhost insted, please use <a href='https://github.com/timpanix/HS-CRM-Importer'>this repo</a>
+PLEASE NOTE: The files in this repo are configured to be run on a live production server. If you would like to use them on localhost insted, please use <a href='https://github.com/timpanix/HS-CRM-Importer'>this repo</a> instead.
