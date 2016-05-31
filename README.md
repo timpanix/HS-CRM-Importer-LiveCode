@@ -1,4 +1,4 @@
-# HS-CRM-Importer - Live Version
+# HS-CRM-Importer - Production Version
 
 At the time of writing the HubSpot CRM has limited offline functionality. It is possible to create contacts, companies and deals offline. They can then be imported into the system via CSV import. However, it is currently not possible to log Sales Activities offline and then bring them into the system in a straight forward fashion. The only options are manual copy & paste or setting up your own API connector.
 <br>This app provides a simple upload functionality to automate this process:
