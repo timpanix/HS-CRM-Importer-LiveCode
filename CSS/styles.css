@@ -1,0 +1,156 @@
+/***********************
+ *      GENERIC        *
+ ***********************/
+
+*, *:before, *:after{
+    box-sizing:border-box; /* This makes all elements disregard the box-model, meaning widths and heights include padding, margin, and border */
+    }
+
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+	background:white;
+	}
+
+body{
+    margin: 0; /* Removes the margin around your content that browsers add by default. */
+    font-size:16px; /* Sets a base font size inherited by other elements */
+    font-weight:100; /* Sets a base font-weight values range from 100-700 (light-bold) */
+    letter-spacing:1.2px; /* Sets a base letter spacing */
+}
+
+
+/***********************
+ *       HEADER        *
+ ***********************/
+
+ .header{
+	max-width:100%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom:30px;
+	background: #D8621D;
+}
+
+
+/***********************
+ *    MAIN BODY        *
+ ***********************/
+
+.body-wrapper-container{
+	max-width:100%;
+}
+
+.body-wrapper{
+	max-width:1000px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom:30px;
+	height:auto;
+}
+
+.left-side{
+	float:left;
+	width: 45%;
+	display:inline-block;
+	margin: 2%;
+}
+
+.right-side{
+	float:right;
+	width:45%;
+	display:inline-block;
+	margin: 2%;
+}
+
+
+/***********************
+ *       FORM          *
+ ***********************/
+
+form#hs-api-form {
+	margin-top: 25px;
+}
+
+label{
+	display:block;
+	width:100%%;
+}
+
+label#email-error {
+	color: #D8621D;		// #D8621D color for error message
+	font-size: 10px;
+	margin-left: 30%;
+	width:70%;
+}
+
+fieldset{
+	border-radius:2%;
+}
+
+input{
+  width:65%;
+}
+
+input#submit{
+  margin:0 auto;
+  width: 30%;
+  background:#D8621D;
+}
+
+
+/***********************
+ *       FOOTER        *
+ ***********************/
+
+.footer{
+	max-width:100%;
+	margin: 0 auto;
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom:30px;
+	background: #D8621D;
+  clear:both;
+}
+
+
+/***********************
+ *    MEDIA QUERIES    *
+ ***********************/
+
+@media screen and (max-width: 750px) {
+	label{
+		width:100%;		/* give labels full width */
+	}
+	input[type="text"], input[type="email"]{
+		width:100%;		/* give all input fields except submit button full width */
+	}
+
+	label#email-error{
+		width:100%;		/* give error message full width */
+		margin-left: 0;	/* let it line up with input field */
+	}
+ }
+
+ @media screen and (max-width: 560px) {
+
+	.body-wrapper{
+		height: 850px;	/* different height to account for form that moved underneath */
+	}
+	.left-side{
+		margin: 0 5%;
+		width: 90%;
+	}
+
+	.right-side{
+		margin: 0 5%;
+		width:90%;
+	}
+
+	.footer{
+		clear:both;	/* make sure footer dropps below other content */
+	}
+}
