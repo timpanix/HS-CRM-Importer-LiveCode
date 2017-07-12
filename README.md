@@ -4,7 +4,7 @@ At the time of writing the HubSpot CRM has limited offline functionality. It is 
 <br>This app provides a simple upload functionality to automate this process:
 It parses an XLSX file line by line and translates every line into a separate activity on the relevant contact record. 
 If there is no such contact in the CRM yet, it will automatically create a new contact and assign the lead owner.
-To save on API calls, the app will store previously looked up ContactIDs in an array. The Contacts API is only pinged for an ID if the same email address was not used previously in the same session
+To save on API calls, the app will store previously looked up Contact IDs in an array. The Contacts API is only pinged for an ID if the same email address was not used previously in the same session.
 
 This app uses the following APIs:<br><ul>
 <li>HubSpot Owner API: http://developers.hubspot.com/docs/methods/owners/get_owners</li>
@@ -15,4 +15,4 @@ http://www.phpclasses.org/package/6279-PHP-Parse-and-retrieve-data-from-Excel-XL
 
 A big thank you goes to Sergey Shuchkin for his SimpleXLSX API. Particularly his examples made the first part of this project a breeze.
 
-PLEASE NOTE: The files in this repo are configured to be run on a live production server. If you would like to use them on localhost insted, please use <a href='https://github.com/timpanix/HS-CRM-Importer'>this repo</a> instead.
+PLEASE NOTE: The files in this repo are configured to be run on a live production server. If you would like to use them on localhost, please use <a href='https://github.com/timpanix/HS-CRM-Importer'>this repo</a> instead.
